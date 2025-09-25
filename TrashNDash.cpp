@@ -57,4 +57,12 @@ int main() {
     cout << "=== Welcome to TrashNDash ===\n";
     cout << "Enter your username buddy :) : ";
     cin >> sillyUser;
-hello
+
+// check if user already exists
+    if (goofyGremlins.find(sillyUser) == goofyGremlins.end()) {
+        cout << "New user created! Welcome to the community, " << sillyUser << ".\n";
+        goofyGremlins[sillyUser] = 0;
+    } else {
+        cout << "Welcome back,  " << sillyUser << "! Your current points: "
+             << goofyGremlins[sillyUser] << "\n";
+    }
