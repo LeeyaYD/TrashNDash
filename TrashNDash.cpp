@@ -5,7 +5,6 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
 // function to load user points
 map<string,int> loadData() {
     map<string,int> goofyGremlins; // stores users + their points
@@ -15,4 +14,11 @@ map<string,int> loadData() {
         goofyGremlins[sillyName] = sillyPoints;
     }
     return goofyGremlins;
+}
+// function to save user points
+void saveData(map<string,int> &goofyGremlins) {
+    ofstream outfile("users.txt");
+    for (auto &u : goofyGremlins) {
+        outfile << u.first << " " << u.second << "\n";
+    }
 }
