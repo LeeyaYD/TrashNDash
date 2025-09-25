@@ -22,3 +22,13 @@ void saveData(map<string,int> &goofyGremlins) {
         outfile << u.first << " " << u.second << "\n";
     }
 }
+// function to show rewards based on points
+
+void showRewards(int sillyPoints) {
+    cout << "\n-- Rewards --\n";
+    if (sillyPoints >= 100) cout << " Eco Hero Badge unlocked!\n";
+    if (sillyPoints >= 70) cout << "20% supermarket voucher available!\n";
+    if (sillyPoints >= 50) cout << "Free coffee coupon available!\n";
+    if (sillyPoints >= 30) cout << "Free bus ride ticket available!\n";
+    if (sillyPoints < 30) cout << "Collect more to unlock your first reward!\n";
+}
