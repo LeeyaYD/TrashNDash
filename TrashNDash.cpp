@@ -57,3 +57,4 @@ int main() {
     cout << "=== Welcome to TrashNDash ===\n";
     cout << "Enter your username buddy :) : ";
     cin >> sillyUser;
+hello
