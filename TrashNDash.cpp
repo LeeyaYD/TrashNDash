@@ -17,8 +17,7 @@ map<string,int> loadData() {
 // function to save user points
 void saveData(map<string,int> &users){
 ofstream outfile("users.txt");
-for (auto &u : users) {
-outfile << u.first << " " << u.second << "\n";
+
   }
 }
-hello there world lol
+
