@@ -77,3 +77,37 @@ bool keepLoopin = true;
         cout << "Choose an option: ";
         int sillyChoice;
         cin >> sillyChoice;
+
+if (sillyChoice == 1) {
+            int plasticBottles, shinyGlass, thiccMetal;
+            cout << "Plastics: "; cin >> plasticBottles;
+            cout << "Glass: "; cin >> shinyGlass;
+            cout << "Metal: "; cin >> thiccMetal;
+
+            int earnedShmoints = (plasticBottles * 5) + (shinyGlass * 7) + (thiccMetal * 10);
+            goofyGremlins[sillyUser] += earnedShmoints;
+
+            cout << "You earned " << earnedShmoints << " pts! Total: "
+                 << goofyGremlins[sillyUser] << "\n";
+        }
+        else if (sillyChoice == 2) {
+            cout << "Current points: " << goofyGremlins[sillyUser] << "\n";
+        }
+        else if (sillyChoice == 3) {
+            showRewards(goofyGremlins[sillyUser]);
+        }
+        else if (sillyChoice == 4) {
+            showLeaderboard(goofyGremlins);
+        }
+        else if (sillyChoice == 5) {
+            keepLoopin = false;
+            cout << "Goodbye, Warrior! " << sillyUser << "! Keep recycling \n";
+        }
+        else {
+            cout << "Invalid option, silly goose.\n";
+        }
+    }
+
+saveData(goofyGremlins);
+return 0;
+}
