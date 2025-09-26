@@ -1,6 +1,6 @@
-Title program: TrashNDash
-Inputs: Recycle Items
-Outputs: Rewards, Points, Leaderboard Scores
+//Title program: TrashNDash
+//Inputs: Recycle Items
+//Outputs: Rewards, Points, Leaderboard Scores
 
 #include <iostream>
 #include <fstream>
