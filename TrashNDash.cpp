@@ -66,3 +66,14 @@ int main() {
         cout << "Welcome back,  " << sillyUser << "! Your current points: "
              << goofyGremlins[sillyUser] << "\n";
     }
+bool keepLoopin = true;
+    while (keepLoopin) {
+        cout << "\n--- Menu ---\n";
+        cout << "1. Recycle items\n";
+        cout << "2. Check points\n";
+        cout << "3. Redeem rewards\n";
+        cout << "4. Leaderboard\n"; // new menu option
+        cout << "5. Exit\n";
+        cout << "Choose an option: ";
+        int sillyChoice;
+        cin >> sillyChoice;
